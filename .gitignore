@@ -1,0 +1,107 @@
+# =========================
+# ROS 2 / Colcon
+# =========================
+build/
+install/
+log/
+
+# Colcon metadata
+.colcon/
+.colcon_install_layout
+
+# ROS generated files
+*.msg.hpp
+*.srv.hpp
+*.action.hpp
+
+# =========================
+# CMake
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+Testing/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# =========================
+# VSCode
+# =========================
+.vscode/
+
+# =========================
+# JetBrains
+# =========================
+.idea/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.swp
+*~
+
+# =========================
+# ROS bag files (optional)
+# Uncomment if you don't want datasets tracked
+# =========================
+# *.db3
+# *.bag
+
+# =========================
+# Gazebo / Simulation cache
+# =========================
+gazebo_logs/
+*.world.sdf-journal
+
+# =========================
+# Binary artifacts
+# =========================
+*.o
+*.a
+*.so
+*.exe
+
+# =========================
+# Coverage
+# =========================
+coverage/
+htmlcov/
+
+# =========================
+# Docker
+# =========================
+*.pid
+docker-compose.override.yml
+
+# =========================
+# NVIDIA / CUDA temp
+# =========================
+*.cubin
+*.ptx
