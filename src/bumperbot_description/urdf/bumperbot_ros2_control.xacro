@@ -2,7 +2,7 @@
 
 <robot name="bumperbot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <ros2_control name="RobotSystem" type="sysem">
+    <ros2_control name="RobotSystem" type="system">
         <xacro:if value="$(arg is_ignition)">
             <hardware>
                 <plugin>ign_ros2_control/IgnitionSystem</plugin>
@@ -15,19 +15,19 @@
         </xacro:unless>
 
         <joint name="wheel_right_joint">
-            <command_inteface name="velocity">
+            <command_interface name="velocity">
                 <param name="min">-1</param>
                 <param name="max">1</param>
-            </command_inteface>
+            </command_interface>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
 
         <joint name="wheel_left_joint">
-            <command_inteface name="velocity">
+            <command_interface name="velocity">
                 <param name="min">-1</param>
                 <param name="max">1</param>
-            </command_inteface>
+            </command_interface>
             <state_interface name="position"/>
             <state_interface name="velocity"/>
         </joint>
